@@ -113,6 +113,7 @@ def main(argv=None):
                           "w") as f:
                     for i, box in enumerate(boxes):
                         line = ",".join(str(box[k]) for k in range(8))
+                        line += "\r\n"
                         # line += "," + str(scores[i]) + "\r\n"
                         f.writelines(line)
 
